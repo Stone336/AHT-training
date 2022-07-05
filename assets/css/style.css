@@ -488,7 +488,7 @@ button a {
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin: auto 150px; 
+        margin: auto; 
     }
     /* CART LIST */
     .cart-list {
@@ -496,6 +496,7 @@ button a {
         justify-content: center;
     }
     .cart {
-        width: calc(75%/2 - 30px);
+        width: calc(35%);
+        margin: 0 auto;
     }
 }
