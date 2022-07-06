@@ -336,12 +336,25 @@ button a {
 }
 .cart {
     width: calc(100%/4 - 30px);
-    margin: 0 20px;
+    margin: 0 15px;
     position: relative;
+}
+.cart:hover {
+    border: 1px solid #777;
+    transition: all 0.3s ease;
+}
+.cart img {
+    width: 100%;
 }
 .cart-info {
     padding-left: 30px;
-    padding-top: 17px;
+    padding-top: 24px;
+}
+.cart-info h4 {
+    font-weight: normal;
+}
+.cart-info p {
+    font-weight: bold;
 }
 .cart-right {
     display: none;
@@ -365,7 +378,7 @@ button a {
     transition: all 0.3s ease;
 }
 .two {
-    margin-top: 75px;
+    margin-top: 77px;
 }
 .cart:hover .cart-right{
     display: block;
@@ -374,7 +387,7 @@ button a {
 .client-say  .client {
     justify-content: center;
     text-align: center;
-    margin-top: 116px;
+    margin-top: 77px;
 }
 .client-say .client .client-item {
     padding-bottom: 26px;
@@ -424,6 +437,74 @@ button a {
 .slick-dots .slick-active button {
     background-color: #dd2f31;
 }
+/* BRAND */
+.brands {
+    margin-top: 100px;
+}
+.brands .container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 9px;
+    border-top: 1px solid #777;
+}
+.brands .container ul {
+    display: flex;
+}
+.brands .container ul li {
+    list-style: none;
+    margin: 30px auto;
+}
+/* FOOTER */
+/* footer {
+    background-color: #000;
+} */
+.footer {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.footer .footer-top {
+    text-align: center;
+    margin: 100px auto;
+}
+.footer-logo {
+    padding-top: 5px;
+}
+.footer-title {
+    font-size: 14px;
+    margin-top: 30px;
+}
+.footer-icons {
+    margin-top: 20px;
+}
+.footer-icons ul {
+    display: flex;
+    justify-content: center;
+}
+.footer-icons ul li {
+    font-size: 20px;
+    list-style: none;
+    padding: 20px;
+}
+.footer-icons ul li a {
+    color: #777;
+}
+.footer_list ul li {
+    list-style: none;
+}
+.footer_list .footer-item a {
+    text-decoration: none;
+}
+.grid_row {
+    display: flex;
+}
+.grid_colum {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+.grid_colum h4 {
+    text-transform: uppercase;
+}
 
 
 
@@ -466,6 +547,9 @@ button a {
         display: block;
         margin-top: 20px;
     }
+    /* .nav-links ul li a:hover {
+        background-color: #dd2f31;
+    } */
     .slider .container {
         margin-left: 50px;
         align-items: center;
@@ -496,7 +580,13 @@ button a {
         justify-content: center;
     }
     .cart {
-        width: calc(35%);
-        margin: 0 auto;
+        width: 35%;
+        margin: auto;
+        left: -34px;
+    }
+    .brands .container ul {
+        display: block;
+        width: calc(18% - 30px);
+        margin: auto;
     }
 }

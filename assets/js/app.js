@@ -20,6 +20,8 @@ body.addEventListener("click" , e =>{
         nav.classList.remove("active");
     }
 });
+
+
 $(document).ready(function(){
     $('.autoplay').slick({
         slidesToShow: 1,
