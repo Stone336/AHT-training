@@ -443,24 +443,29 @@ button a {
 }
 .brands .container {
     max-width: 1170px;
+    /* width: 61%; */
     margin: 0 auto;
     padding-top: 9px;
     border-top: 1px solid #777;
 }
 .brands .container ul {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 .brands .container ul li {
     list-style: none;
-    margin: 30px auto;
+    margin: 35px 20px;
 }
 /* FOOTER */
 footer {
     background-color: #222222;
+    margin-top: -5px;
 }
 .footer {
     max-width: 1170px;
-    margin: 5px auto;
+    margin: 0px auto;
 }
 .footer .footer-top {
     text-align: center;
@@ -536,13 +541,13 @@ footer {
     padding: 8px 0;
 }
 .content-other {
-    height: 50px;
+    min-height: 50px;
     background-color: #111111;
     text-align: center;
 }
 .content-other p {
     color: #777;
-    padding: 14px 0;
+    padding: 10px 0;
     font-size: 15px;
 }
 .content-other p:hover {
@@ -628,10 +633,15 @@ footer {
     }
     .brands .container ul {
         display: block;
-        width: calc(18% - 30px);
+        /* width: calc(18% - 30px); */
         margin: auto;
     }
     .grid_row {
-        display: block;
+      display: block;
     }
+    .footer {
+        display: block;
+        text-align: center;
+    }
+
 }
