@@ -644,8 +644,8 @@ footer {
         text-align: center;
     }
     .brands .container ul li {
-        width: 40%;
+        width: 30%;
         
     }
-
 }
+@media (min-width: 1024px) {}
