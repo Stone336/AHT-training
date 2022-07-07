@@ -450,6 +450,7 @@ button a {
 }
 .brands .container ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -632,8 +633,7 @@ footer {
         margin: auto;
     }
     .brands .container ul {
-        display: block;
-        /* width: calc(18% - 30px); */
+        justify-content: center;
         margin: auto;
     }
     .grid_row {
@@ -642,6 +642,10 @@ footer {
     .footer {
         display: block;
         text-align: center;
+    }
+    .brands .container ul li {
+        width: 40%;
+        
     }
 
 }
