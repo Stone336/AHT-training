@@ -22,7 +22,6 @@ nav .nav-bar {
     height: 100%;
     max-width: 1170px;
     width: 100%;
-    /* background-color: rgba(55, 53, 53, 0.447); */
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -96,10 +95,6 @@ nav .nav-bar .menu {
     cursor: pointer;
     transition: all 0.3 ease;
 }
-/* .searchToggle i:hover {
-    color: #dd2f31;
-    transition: all 0.3s ease;
-} */
 .searchToggle i .cancel {
     opacity: 0;
     pointer-events: none;
@@ -256,10 +251,6 @@ button a {
     font-size: 14px;
     padding: 3px 0;
 }
-.category-product-top img:hover {
-    transform: scale(1.1);
-    transition: all 0.3s ease;
-}
 .strength .category-product-top {
     transform: translateY(97%);
 }
@@ -332,11 +323,12 @@ button a {
     overflow: hidden;
     background-color: #fff;
     max-width: 1170px;
-    margin: 40px auto;
+    margin: 43px auto;
 }
 .cart {
     width: calc(100%/4 - 30px);
     margin: 0 15px;
+    padding-bottom: 30px;
     position: relative;
 }
 .cart:hover {
@@ -359,8 +351,8 @@ button a {
 .cart-right {
     display: none;
     position: absolute;
-    top: 13px;
-    right: 0px;
+    top: 14px;
+    right: 12px;
 }
 .cart-right ul li {
     list-style: none;
@@ -377,9 +369,9 @@ button a {
     color: #fff;
     transition: all 0.3s ease;
 }
-.two {
+/* .two {
     margin-top: 77px;
-}
+} */
 .cart:hover .cart-right{
     display: block;
 }
@@ -387,7 +379,7 @@ button a {
 .client-say  .client {
     justify-content: center;
     text-align: center;
-    margin-top: 77px;
+    margin-top: 45px;
 }
 .client-say .client .client-item {
     padding-bottom: 26px;
@@ -514,7 +506,8 @@ footer {
 }
 .grid_colum {
     padding: 73px 0 43px 0;
-    min-width: 300px;
+    width: 300px;
+    margin: 0 auto;
 }
 .grid_colum::first-child {
     margin-right: 0;
@@ -639,13 +632,48 @@ footer {
     .grid_row {
       display: block;
     }
-    .footer {
-        display: block;
-        text-align: center;
-    }
     .brands .container ul li {
         width: 30%;
         
     }
-
+    .footer {
+        display: block;
+        text-align: center;
+    }
+}
+@media (max-width: 1225px) {
+    /* category-product */
+    .category-product .container {
+        display: block;
+        justify-content: center;
+    }
+    .strength .category-product-bottom {
+        transform: unset;
+    }
+    .strength .category-product-top {
+        transform: unset;
+    }
+    .category-product-top img {
+        width: 100%;
+    }
+    .product .tab-bar .container {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto; 
+    }
+    /* CART LIST */
+    
+    .brands .container ul {
+        justify-content: center;
+        margin: auto;
+    }
+    .brands .container ul li {
+        width: 25%;
+        
+    }
+    .footer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
