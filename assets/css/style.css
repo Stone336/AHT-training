@@ -344,7 +344,7 @@ button a {
     overflow: hidden;
     background-color: #fff;
     max-width: 1170px;
-    margin: 45px auto;
+    margin: 49px auto;
     justify-content: space-between;
 }
 .cart {
@@ -365,15 +365,18 @@ button a {
 }
 .cart-info h4 {
     font-weight: normal;
+    font-size: 14px;
 }
 .cart-info p {
     font-weight: bold;
+    font-size: 14px;
+    margin-top: 3px;
 }
 .cart-right {
     display: none;
     position: absolute;
-    top: 14px;
-    right: 12px;
+    top: 8px;
+    right: -2px;
 }
 .cart-right ul li {
     list-style: none;
@@ -397,7 +400,7 @@ button a {
 .client-say  .client {
     justify-content: center;
     text-align: center;
-    margin-top: 45px;
+    margin-top: 40px;
 }
 .client-say .client .client-item {
     padding-bottom: 50px;
@@ -737,7 +740,7 @@ footer {
     }
     .nav-search input {
         height: 100%;
-        padding: 0 50px 0 15px;
+        padding: 0 5px 0 15px;
         outline: none;
         border: none;
         border-radius: 4px;
