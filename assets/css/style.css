@@ -340,64 +340,80 @@ button a {
 
 /* CART LIST */
 .cart-list {
-    display: flex;
-    overflow: hidden;
-    background-color: #fff;
-    max-width: 1170px;
-    margin: 45px auto;
     justify-content: space-between;
+    align-items: center;
+    display: flex;
+    max-width: 1170px;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 .cart {
     width: calc(100%/4 - 30px);
+    display: flex;
+    margin-top: 40px;
     padding-bottom: 30px;
     position: relative;
 }
-.cart:hover {
-    box-shadow: 0px 0px 12px 1px #777777;
-    transition: all 0.3s ease;
+.two {
+    margin-top: 50px;
 }
-.cart img {
+.cart:hover {
+    box-shadow: 0 0 6px 2px rgb(0 0 0 / 20%);
+}
+.cart:hover ul li {
+    display: block;
+}
+.cart .cart-content img {
     width: 100%;
 }
-.cart-info {
-    padding-left: 30px;
-    padding-top: 20px;
-}
-.cart-info h4 {
+.cart-content .cart-title {
+    margin-left: 30px;
+    padding-top: 26px;
+    font-size: 14px;
     font-weight: normal;
 }
-.cart-info p {
+.cart-content .cart-price {
+    margin-left: 30px;
+    font-size: 14px;
     font-weight: bold;
+    padding-top: 2px;
 }
 .cart-right {
-    display: none;
     position: absolute;
-    top: 14px;
-    right: 12px;
+    right: 11px;
+    top: 6px;
 }
 .cart-right ul li {
     list-style: none;
-    padding: 12px;
-}
-.cart-right ul li a {
-    color: #777;
+    padding: 4px 8px;
+    margin: 15px 0;
     border: 1px solid #777;
     border-radius: 5px 0px;
-    padding: 4px 8px;
+    display: none;
 }
-.cart-right ul li a:hover {
+.cart-right ul li {
+    list-style: none;
+    padding: 4px 8px;
+    margin: 15px 0;
+    border: 1px solid #777;
+    border-radius: 5px 0px;
+    display: none;
+}
+.cart-right ul li:hover {
     background-color: #dd2f31;
-    color: #fff;
     transition: all 0.3s ease;
 }
-.cart:hover .cart-right{
-    display: block;
+.cart-right ul li:hover a {
+    color: #ffffff;
+}
+.cart-right ul li a {
+    color: #777777;
 }
 /* CLIENT SAY */
 .client-say  .client {
     justify-content: center;
     text-align: center;
-    margin-top: 45px;
+    margin-top: 88px;
 }
 .client-say .client .client-item {
     padding-bottom: 50px;
@@ -417,7 +433,7 @@ button a {
 }
 .client-say .client .client-item h3 {
     text-transform: uppercase;
-    margin-top: 27px;
+    margin-top: 24px;
 }
 .client-say .client .client-item h5 {
     font-weight: lighter;
@@ -484,15 +500,15 @@ footer {
 .footer .footer-top {
     text-align: center;
     padding: 94px 0 50px 0;
-    border-bottom: 1px solid #777;
+    border-bottom: 1px solid #444444;
 }
 .footer-top .footer-logo {
     padding-top: 6px;
 }
 .footer-title {
     font-size: 14px;
-    margin-top: 26px;
-    color: #777;
+    margin-top: 30px;
+    color: #777777;
 }
 .footer-title p {
     line-height: 25px;
@@ -512,7 +528,7 @@ footer {
     letter-spacing: 44px;
 }
 .footer-icons ul li a {
-    color: #777;
+    color: #6c6c6c;
 }
 .footer-icons ul li a:hover {
     color: #fff;
@@ -558,7 +574,7 @@ footer {
     text-align: center;
 }
 .content-other p {
-    color: #777;
+    color: #777777;
     padding: 14px 0;
     font-size: 14px;
 }
@@ -737,7 +753,7 @@ footer {
     }
     .nav-search input {
         height: 100%;
-        padding: 0 50px 0 15px;
+        padding: 0 5px 0 15px;
         outline: none;
         border: none;
         border-radius: 4px;
@@ -957,6 +973,9 @@ footer {
     }
     .product {
         margin-top: 40em;
+    }
+    .product .tab-bar .container ul li {
+        font-size: 14px;
     }
     .container .content {
         left: -18px;
